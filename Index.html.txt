@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Atlantavibes.mag | Promotion & Media</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+    body{
+      background:#0b0b0b;
+      color:#fff;
+      line-height:1.6;
+    }
+    a{text-decoration:none;color:inherit;}
+
+    /* HEADER */
+    header{
+      text-align:center;
+      padding:60px 20px;
+      background:linear-gradient(135deg,#000,#1a1a1a);
+    }
+    header h1{
+      font-size:2.8rem;
+      font-weight:700;
+      letter-spacing:1px;
+    }
+    header p{
+      margin-top:10px;
+      color:#aaa;
+      font-size:1.1rem;
+    }
+
+    /* BUTTONS */
+    .btn{
+      display:inline-block;
+      margin:10px;
+      padding:14px 28px;
+      border-radius:30px;
+      background:#fff;
+      color:#000;
+      font-weight:600;
+      transition:0.3s;
+    }
+    .btn:hover{
+      background:#c9c9c9;
+    }
+
+    /* SECTION */
+    section{
+      padding:70px 20px;
+      max-width:1100px;
+      margin:auto;
+    }
+    section h2{
+      text-align:center;
+      font-size:2.2rem;
+      margin-bottom:20px;
+    }
+    section p{
+      text-align:center;
+      color:#bbb;
+      max-width:700px;
+      margin:0 auto 40px;
+    }
+
+    /* STATS */
+    .stats{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:25px;
+    }
+    .stat-box{
+      background:#141414;
+      padding:30px;
+      border-radius:16px;
+      text-align:center;
+    }
+    .stat-box h3{
+      font-size:2rem;
+      color:#fff;
+    }
+    .stat-box span{
+      color:#aaa;
+      font-size:0.95rem;
+    }
+
+    /* MEDIA KIT */
+    .media{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:30px;
+    }
+    .media-box{
+      background:#141414;
+      padding:30px;
+      border-radius:18px;
+    }
+    .media-box h3{
+      margin-bottom:10px;
+    }
+    .media-box p{
+      text-align:left;
+      margin:0;
+      color:#aaa;
+    }
+
+    /* FORM */
+    form{
+      max-width:600px;
+      margin:40px auto 0;
+      background:#141414;
+      padding:35px;
+      border-radius:20px;
+    }
+    input,textarea{
+      width:100%;
+      padding:14px;
+      margin-bottom:15px;
+      border-radius:10px;
+      border:none;
+      outline:none;
+      background:#0b0b0b;
+      color:#fff;
+    }
+    button{
+      width:100%;
+      padding:15px;
+      border:none;
+      border-radius:30px;
+      background:#fff;
+      color:#000;
+      font-weight:700;
+      cursor:pointer;
+    }
+    button:hover{
+      background:#c9c9c9;
+    }
+
+    footer{
+      text-align:center;
+      padding:30px;
+      color:#777;
+      font-size:0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Atlantavibes.mag</h1>
+  <p>Atlanta Based • Instagram Promotion • Media Coverage</p>
+
+  <a href="https://instagram.com/atlantavibes.mag" class="btn">Instagram</a>
+  <a href="#contact" class="btn">Work With Us</a>
+</header>
+
+<section>
+  <h2>Why Atlantavibes?</h2>
+  <p>We promote brands, creators & businesses across Atlanta with high-engagement Instagram campaigns.</p>
+
+  <div class="stats">
+    <div class="stat-box">
+      <h3>100K+</h3>
+      <span>Monthly Reach</span>
+    </div>
+    <div class="stat-box">
+      <h3>5%+</h3>
+      <span>Engagement Rate</span>
+    </div>
+    <div class="stat-box">
+      <h3>USA</h3>
+      <span>Targeted Audience</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Media Kit</h2>
+  <p>Professional promotion packages tailored for Atlanta & USA-based brands.</p>
+
+  <div class="media">
+    <div class="media-box">
+      <h3>Audience</h3>
+      <p>18-35 • USA • Lifestyle, Music, Business & Events focused followers.</p>
+    </div>
+    <div class="media-box">
+      <h3>Services</h3>
+      <p>Story Promotion, Feed Posts, Brand Features, Event Coverage.</p>
+    </div>
+    <div class="media-box">
+      <h3>Collaboration</h3>
+      <p>Paid promotions, partnerships & long-term brand deals.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Work With Us</h2>
+  <p>Fill the form & we’ll connect with you instantly on WhatsApp.</p>
+
+  <!-- FORM : replace FORM_LINK with Formspree -->
+  <form action="https://formspree.io/f/FORM_LINK" method="POST" onsubmit="redirectWhatsApp()">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Tell us about your brand" rows="4" required></textarea>
+    <button type="submit">Submit & Chat</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 Atlantavibes.mag • Atlanta, USA
+</footer>
+
+<script>
+function redirectWhatsApp(){
+  setTimeout(function(){
+    window.location.href="https://wa.me/14045551234";
+  },800);
+}
+</script>
+
+</body>
+</html>
